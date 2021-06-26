@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+  </head>
+  <body>
+    <header>
+      <h1>Vamos contar</h1>
+    </header>
+    <section>
+      <div id="dados">
+        <div class="container">
+          <div class="row">
+            <!-- CAMPO INÍCIO -->
+            <div class="col-4">
+              <label for="txtInicio" class="form-label">Início</label>
+              <div class="input-group">
+                <input type="number" class="form-control" name="inicio" id="txtInicio">
+              </div>
+            </div>
+
+            <!-- CAMPO FIM -->
+            <div class="col-4">
+              <label for="txtFim" class="form-label">Fim</label>
+              <div class="input-group">
+                <input type="number" class="form-control" name="fim" id="txtFim">
+              </div>
+            </div>
+
+            <!-- CAMPO PASSO (INCREMENTO/DECREMENTO) -->
+            <div class="col-4">
+              <label for="txtPasso" class="form-label">Passo</label>
+              <div class="input-group">
+                <input type="number" class="form-control" name="passo" id="txtPasso">
+              </div>
+            </div>
+            
+            <div class="col mt-3">
+                <input type="button" value="Contar" class="btn btn-primary" onclick="contar()">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="resposta">
+        Preparando contagem...
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; Desenvolvido &#9829; por Danilo Castro</p>
+      <p>
+        <a href="https://www.linkedin.com/in/danilotc" target="_blank">
+          <img src="img/linkedin.png" alt="linkedin" />
+        </a>
+        <a href="https://github.com/danilotc" target="_black">
+          <img src="img/github.png" alt="linkedin" />
+        </a>
+      </p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
